@@ -1,0 +1,22 @@
+{
+  "name": "vue-code",
+  "version": "1.0.0",
+  "description": "Vue source interpretation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erbing/Vue-Code.git"
+  },
+  "author": "zigzag",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erbing/Vue-Code/issues"
+  },
+  "homepage": "https://github.com/erbing/Vue-Code#readme",
+  "dependencies": {
+    "babel-plugin-transform-flow-strip-types": "^6.22.0"
+  }
+}
