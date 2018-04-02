@@ -17,10 +17,9 @@
     "url": "https://github.com/erbing/Vue-Code/issues"
   },
   "homepage": "https://github.com/erbing/Vue-Code#readme",
-  "dependencies": {
-    "babel-plugin-transform-flow-strip-types": "^6.22.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0"
   }
 }
