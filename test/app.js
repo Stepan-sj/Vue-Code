@@ -10,5 +10,8 @@ new Vue({
         todo() {
             console.log('xxx')
         }
+    },
+    mounted() {
+        console.log(this)
     }
 })
