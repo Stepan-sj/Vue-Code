@@ -43,13 +43,13 @@ export default {
             });
         }
     },
-    // mounted() {
-    //     console.log(Vue)
-    //     this.testOptions = this.handleJson(JSON.stringify(this.$parent.$options, null, 2))
-    //     console.log(this)
-    // },
+    mounted() {
+        console.log(Vue)
+        this.testOptions = this.handleJson(JSON.stringify(this.$parent.$options, null, 2))
+        console.log(this)
+    },
     created() {
-        console.log(this, 'created')
+        // console.log(this, 'created')
     }
 }
 </script>
