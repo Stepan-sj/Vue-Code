@@ -8,17 +8,25 @@
                 -->
             </div>
         </pre>
+        <Hello></Hello>
+        <Second></Second>
     </div>
 </template>
 
 <script>
 import Vue from 'vue'
+import Hello from './components/hello'
+import Second from './components/second'
 export default {
     name: 'Apps-test',
     data() {
         return {
             testOptions: {}
         }
+    },
+    components: {
+        Hello,
+        Second
     },
     methods: {
         handleJson(json) {
@@ -44,12 +52,11 @@ export default {
         }
     },
     mounted() {
-        console.log(Vue)
         this.testOptions = this.handleJson(JSON.stringify(this.$parent.$options, null, 2))
-        console.log(this)
+        console.log(this, 'mounted')
     },
     created() {
-        // console.log(this, 'created')
+        console.log(this, 'created')
     }
 }
 </script>
