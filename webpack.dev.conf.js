@@ -46,7 +46,7 @@ let webpackConfig = {
     ],
     devServer: {
         port: 8800,
-        open: false
+        open: true
     }
 }
 
