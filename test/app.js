@@ -1,17 +1,8 @@
 import Vue from 'vue'
+import App from './Apps'
 
 new Vue({
-    data() {
-        return {
-            test: 'xxx'
-        }
-    },
-    methods: {
-        todo() {
-            console.log('xxx')
-        }
-    },
-    mounted() {
-        console.log(this)
-    }
+    el: '#app',
+    components: {App},
+    template: '<App/>'
 })
