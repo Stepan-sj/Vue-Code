@@ -23,6 +23,7 @@
     "html-webpack-plugin": "^2.30.1",
     "less": "^3.0.1",
     "less-loader": "^4.1.0",
+    "mathjs": "^4.0.1",
     "vue": "^2.5.16",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
