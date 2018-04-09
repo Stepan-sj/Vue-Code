@@ -52,7 +52,7 @@ export default {
         }
     },
     mounted() {
-        this.testOptions = this.handleJson(JSON.stringify(this.$parent.$options, null, 2))
+        this.testOptions = this.handleJson(JSON.stringify(this.$root.$children[0].$children[0], null, 2))
         console.log(this, 'mounted')
     },
     created() {
