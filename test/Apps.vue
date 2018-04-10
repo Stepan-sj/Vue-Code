@@ -11,12 +11,18 @@
         <Hello></Hello>
         <Second></Second>
     </div>
+
+
+
 </template>
 
 <script>
+
 import Vue from 'vue'
 import Hello from './components/hello'
 import Second from './components/second'
+
+
 export default {
     name: 'Apps-test',
     data() {
@@ -52,7 +58,7 @@ export default {
         }
     },
     mounted() {
-        this.testOptions = this.handleJson(JSON.stringify(this.$root.$children[0].$children[0], null, 2))
+        this.testOptions = this.handleJson(JSON.stringify(this.$parent.$options, null, 2))
         console.log(this, 'mounted')
     },
     created() {
@@ -79,4 +85,10 @@ export default {
     .boolean { color: blue; }
     .null { color: #BA695D; display: inline;}
     .key { color: #9CD0CB; }
+    .test{
+        width: 100px;
+        height: 50px;
+        background: green;
+        color: #fff;
+    }
 </style>

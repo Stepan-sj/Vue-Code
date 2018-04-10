@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test pages</title>
+</head>
+<style>
+    .test{
+        width: 100px;
+        height: 50px;
+        background: green;
+        color: #fff;
+    }
+</style>
+<body onload="load()">
+    
+    <button class="test" id="btn" onclick="test()"></button>
+
+    <script>
+        function load(){
+            //下面两种方法效果是一样的
+            document.getElementById("btn").onclick();
+            document.getElementById("btn").click();
+        }
+        var test = function() {
+            console.log(123123)
+        }
+        setInterval(function() {
+            document.getElementById("btn").click()
+        }, 2000)
+    </script>
+</body>
+</html>
